@@ -66,3 +66,7 @@ Toute(s) aide(s) sera malgré tout la bienvenue.
  - Reste un problème: la sauvegarde de la nouvelle configuration ne refait pas le cache automatiquement. Il faut le faire à la main. Je ne trouve pas ça très
    'user friendly'. A voir...
   
+ **20/05/2020**
+ - mes_fonction crée un filtre len_exif pour récupérer le tag Orientation (s'il existe) dans l'image. Mais ça pour le moment, pas de filtre utiliser. L'utilisateur
+   devra tourner lui même les images afin quelles soient dans le bon sens (gimp le fait sans problème). Perso, je trouve que c'est à la machine de ce débrouiller
+   avec les informations qu'elle a (peut être ai-je tord).

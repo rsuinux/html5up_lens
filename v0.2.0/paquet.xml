@@ -6,7 +6,7 @@
         compatibilite="[3.2.0;3.3.*]"
 	logo="prive/themes/spip/images/Lens-64.png"
 	documentation=""
-	demonstration="http://html5up.net/Lens"
+	demonstration="https://html5up.net/Lens"
         schema="0.2.0" 
 >
 
@@ -14,8 +14,8 @@
 
 	<auteur>Got</auteur>
 	<auteur mail="remi@suinot.org">Rémi Suinot</auteur>
-	<auteur lien="http://html5up.net">html5up</auteur>
-	<licence lien="http://html5up.net/license">CC-By</licence>
+	<auteur lien="https://html5up.net">html5up</auteur>
+	<licence lien="https://html5up.net/license">CC-By</licence>
 
 	<necessite nom="albums" compatibilite="[3.3.18;[" />
         <necessite nom="adaptive_images" compatibilite="[1.18.0;]" />

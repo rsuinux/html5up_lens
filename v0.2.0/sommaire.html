@@ -30,7 +30,7 @@
 					[(#SET{titre_album,#TITRE})]
 						<article>
 							<BOUCLE_DOCUMENTS(DOCUMENTS){id_album}{0,1}>
-							<a class="thumbnail" href="[(#FICHIER|lens_exif|image_reduire{1200}|extraire_attribut{src})]">[(#LOGO_DOCUMENT|image_reduire{160}|image_recadre{160,100}|vider_attribut{class})] [<span>(#GET{titre_album})</span>] </a>
+							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">[(#LOGO_DOCUMENT|image_reduire{160}|image_recadre{160,100}|vider_attribut{class})] [<span>(#GET{titre_album})</span>] </a>
 							</BOUCLE_DOCUMENTS>
 							<div class="link">
 								<a href="#URL_ALBUM" class="button large alt"><:lens:voir_album:></a>
