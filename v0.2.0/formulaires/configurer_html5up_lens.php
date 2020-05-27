@@ -144,6 +144,15 @@ function formulaires_configurer_html5up_lens_saisies_dist(){
 						'defaut' => lire_config('html5uplens/valeur_bouton_couleur')
 					) 
 				),
+				array(
+					'saisie' => 'couleur',
+					'options' => array(
+						'nom' => 'valeur_texte_bouton_couleur',
+						'conteneur_class' => 'pleine_largeur',
+						'explication' => _T('html5up_lens:texte_bouton_couleur_explication'),
+						'defaut' => lire_config('html5uplens/valeur_texte_bouton_couleur')
+					) 
+				),
 			),
 		),
 		array (
@@ -236,6 +245,8 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 		ecrire_config( 'html5uplens/valeur_cadre_bouton_taille', 0 ) ;
 	}
 	ecrire_config( 'html5uplens/valeur_bouton_couleur', _request('valeur_bouton_couleur') ) ;
+
+	ecrire_config( 'html5uplens/valeur_texte_bouton_couleur', _request('valeur_texte_bouton_couleur') ) ;
 
 	ecrire_config( 'html5uplens/valeur_rotation', _request('valeur_rotation') ) ;
 

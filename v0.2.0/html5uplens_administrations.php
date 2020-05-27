@@ -25,10 +25,10 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
         );
 
 
-/* 1.0.1 = nouveau numero de version - xxyy la nouvelle variable dans la base de donnée
-//        $maj['1.0.1'] = array(
-//                array('ecrire_config', 'html5uplens/xxyy','azertyuiop')
-	//        ); */
+	/* 0.2.1 = ajout de la couleur du texte dans le bouton Album */
+        $maj['0.2.1'] = array(
+                array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
+	); 
 
 	include_spip('base/upgrade');
  	maj_plugin($nom_meta_base_version, $version_cible, $maj);

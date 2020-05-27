@@ -61,6 +61,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'sens_rotation_label' => 'Rotation des photos',
 
 	// T
+	'texte_bouton_couleur_explication' => 'Couleur du texte dans le bouton \'Album\'',
+	'texte_couleur_defaut' => '#DDF224',
 	'theme_graphique_par_html5up' => 'Thème graphique par HTML5 UP',
 	'titre_page_configurer_html5up_lens' => 'Configurer le squelette HTML5up Lens',                                                      
 

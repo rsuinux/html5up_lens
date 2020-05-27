@@ -7,7 +7,7 @@
 	logo="prive/themes/spip/images/Lens-64.png"
 	documentation=""
 	demonstration="https://html5up.net/Lens"
-        schema="0.2.0" 
+        schema="0.2.1" 
 >
 
 	<nom>Lens</nom>

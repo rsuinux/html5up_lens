@@ -70,3 +70,9 @@ Toute(s) aide(s) sera malgré tout la bienvenue.
  - mes_fonction crée un filtre len_exif pour récupérer le tag Orientation (s'il existe) dans l'image. Mais ça pour le moment, pas de filtre utiliser. L'utilisateur
    devra tourner lui même les images afin quelles soient dans le bon sens (gimp le fait sans problème). Perso, je trouve que c'est à la machine de ce débrouiller
    avec les informations qu'elle a (peut être ai-je tord).
+
+ **27/05/2020**
+ - Ajout d'une valeur dans spip_meta pour le plugin: couleur du texte dans le bouton Album
+ - correction de bug sur le css que j'ai modifié.
+
+
