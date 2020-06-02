@@ -153,29 +153,14 @@ function formulaires_configurer_html5up_lens_saisies_dist(){
 						'defaut' => lire_config('html5uplens/valeur_texte_bouton_couleur')
 					) 
 				),
-			),
-		),
-		array (
-			'saisie' => 'fieldset',
-			'options' => array (
-				'nom' => 'rotation',
-				'label' => _T('html5up_lens:sens_rotation_label'),
-				'pliable' => 'oui',
-				'plie' => 'oui' 
-			),
-			'saisies' => array(
 				array(
-					'saisie' => 'radio',
+					'saisie' => 'couleur',
 					'options' => array(
-						'nom' => 'valeur_rotation',
+						'nom' => 'valeur_texte_viewer_couleur',
 						'conteneur_class' => 'pleine_largeur',
-						'explication' => _T('html5up_lens:rotation_o_n_explication'),
-						'defaut' => lire_config('html5uplens/valeur_rotation'),
-						'datas' => array(
-							'oui' => _T('html5up_lens:rotation_selecteur_non'),
-							'non' => _T('html5up_lens:rotation_selecteur_non')
-						) 
-					),
+						'explication' => _T('html5up_lens:texte_viewer_couleur_explication'),
+						'defaut' => lire_config('html5uplens/valeur_texte_viewer_couleur')
+					) 
 				),
 			),
 		),
@@ -248,7 +233,7 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 
 	ecrire_config( 'html5uplens/valeur_texte_bouton_couleur', _request('valeur_texte_bouton_couleur') ) ;
 
-	ecrire_config( 'html5uplens/valeur_rotation', _request('valeur_rotation') ) ;
+	ecrire_config( 'html5uplens/valeur_texte_viewer_couleur', _request('valeur_texte_viewer_couleur') ) ;
 
 	$retour['message_ok'] = _T('html5up_lens:enregistrement_formulaire');
 	return $retour;

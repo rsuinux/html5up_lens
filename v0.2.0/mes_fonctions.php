@@ -59,7 +59,4 @@ function lens_exif($img ) {
 	return $img;
 }
 
-
-
-
 ?>

@@ -13,11 +13,10 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
 	include_spip('inclure/html5up_lens_constantes');
 	$maj=array();
 	$maj['create'] = array(
-                array('ecrire_config', 'html5uplens/breve_pied', _LENS_BREVE_PIED ),
-                array('ecrire_config', 'html5uplens/valeur_cadre_vignette', _LENS_CADRE_VIGNETTE_O_N ),
-	        array('ecrire_config', 'html5uplens/valeur_cadre_couleur', _LENS_CADRE_COULEUR ),
+		array('ecrire_config', 'html5uplens/breve_pied', _LENS_BREVE_PIED ),
+		array('ecrire_config', 'html5uplens/valeur_cadre_vignette', _LENS_CADRE_VIGNETTE_O_N ),
+		array('ecrire_config', 'html5uplens/valeur_cadre_couleur', _LENS_CADRE_COULEUR ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_taille', _LENS_CADRE_TAILLE ),
-		array('ecrire_config', 'html5uplens/valeur_rotation', _LENS_PHOTO_ROTATION ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton', _LENS_BOUTON_CADRE_O_N ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_couleur', _LENS_BOUTON_CADRE_COULEUR ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_taille', _LENS_BOUTON_CADRE_TAILLE ),
@@ -26,12 +25,13 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
 
 
 	/* 0.2.1 = ajout de la couleur du texte dans le bouton Album */
-        $maj['0.2.1'] = array(
-                array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
+	$maj['0.2.1'] = array(
+		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
+		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR)
 	); 
 
 	include_spip('base/upgrade');
- 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
+	maj_plugin($nom_meta_base_version, $version_cible, $maj);
 
 }
 

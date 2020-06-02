@@ -74,5 +74,5 @@ Toute(s) aide(s) sera malgré tout la bienvenue.
  **27/05/2020**
  - Ajout d'une valeur dans spip_meta pour le plugin: couleur du texte dans le bouton Album
  - correction de bug sur le css que j'ai modifié.
-
+ - correction avec des tabulations dans tous les fichiers les nécessitants à la place de série d'espaces0
 
