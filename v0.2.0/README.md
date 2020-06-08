@@ -76,3 +76,7 @@ Toute(s) aide(s) sera malgré tout la bienvenue.
  - correction de bug sur le css que j'ai modifié.
  - correction avec des tabulations dans tous les fichiers les nécessitants à la place de série d'espaces0
 
+ **02/06/2020**
+ - Ça y est, j'ai trouvé comment mettre les couleurs sur la partie gauche
+   (#viewer) sans que cela ne se répercute sur la partie droite (#footer)!
+
