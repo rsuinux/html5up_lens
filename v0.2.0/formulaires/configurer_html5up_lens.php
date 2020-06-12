@@ -153,17 +153,42 @@ function formulaires_configurer_html5up_lens_saisies_dist(){
 						'defaut' => lire_config('html5uplens/valeur_texte_bouton_couleur')
 					) 
 				),
+			),
+		),
+		array (
+			'saisie' => 'fieldset',
+			'options' => array (
+				'nom' => 'texte_aux_images',
+				'label' => _T('html5up_lens:texte_aux_images_label'),
+				'pliable' => 'oui',
+				'plie' => 'oui' 
+			), 
+			'saisies' => array(
+				array(
+					'saisie' => 'radio',
+					'options' => array(
+						'nom' => 'valeur_texte_aux_images',
+						'conteneur_class' => 'pleine_largeur',
+						'explication' => _T('html5up_lens:texte_aux_images_explication'),
+						'defaut' => lire_config('html5uplens/valeur_texte_aux_images'),
+						'datas' => array(
+							'oui' => _T('html5up_lens:texte_aux_images_oui'),
+							'non' => _T('html5up_lens:texte_aux_images_non')
+						) 
+					),
+        ),
 				array(
 					'saisie' => 'couleur',
 					'options' => array(
+					  'afficher_si' => '@valeur_texte_aux_images@=="oui"',
 						'nom' => 'valeur_texte_viewer_couleur',
 						'conteneur_class' => 'pleine_largeur',
 						'explication' => _T('html5up_lens:texte_viewer_couleur_explication'),
 						'defaut' => lire_config('html5uplens/valeur_texte_viewer_couleur')
 					) 
 				),
-			),
-		),
+      ),
+    ),
 	);
 
 	return $saisies;
@@ -233,7 +258,13 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 
 	ecrire_config( 'html5uplens/valeur_texte_bouton_couleur', _request('valeur_texte_bouton_couleur') ) ;
 
-	ecrire_config( 'html5uplens/valeur_texte_viewer_couleur', _request('valeur_texte_viewer_couleur') ) ;
+
+	if ( _request('valeur_texte_aux_images') == "oui" ) {
+	  ecrire_config( 'html5uplens/valeur_texte_viewer_couleur', _request('valeur_texte_viewer_couleur') ) ;
+	  ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
+	} else {
+	  ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
+	}
 
 	$retour['message_ok'] = _T('html5up_lens:enregistrement_formulaire');
 	return $retour;

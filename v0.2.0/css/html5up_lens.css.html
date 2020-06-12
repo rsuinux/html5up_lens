@@ -33,30 +33,20 @@
 		opacity:[(#CONFIG{html5uplens/valeur_cadre_vignette}|=={'oui'}|?{1,0})];
 	}
 
-.button.alt, .button.alt:hover {
-	background:   [(#CONFIG{html5uplens/valeur_bouton_couleur})];
-	border-color: [(#CONFIG{html5uplens/valeur_cadre_bouton_couleur})];
-	border-width: [(#CONFIG{html5uplens/valeur_cadre_bouton}|=={'oui'}|?{ #CONFIG{html5uplens/valeur_cadre_bouton_taille} ,0} )]px;
-	color:        [(#CONFIG{html5uplens/valeur_texte_bouton_couleur})];
+#header p {
+  color: initial;
 }
 
-#viewer .slide .caption .config_lens p {
-	color: [(#CONFIG{html5uplens/valeur_texte_viewer_couleur})];
-}
-#viewer .slide .caption .config_lens h2 {
-	color: [(#CONFIG{html5uplens/valeur_texte_viewer_couleur})];
+
+.button.alt, .button.alt:hover {
+	background: [(#CONFIG{html5uplens/valeur_bouton_couleur})];
+	border-color: [(#CONFIG{html5uplens/valeur_cadre_bouton_couleur})];
+	border-width: [(#CONFIG{html5uplens/valeur_cadre_bouton}|=={'oui'}|?{ #CONFIG{html5uplens/valeur_cadre_bouton_taille} ,0} )]px;
+/* color #fff pour la couleur du texte */
+	color: [(#CONFIG{html5uplens/valeur_texte_bouton_couleur})];
 }
 
 /* Footer */
-
-#footer .copyright {
-	list-style: none;
-	padding: 0;
-}
-
-#footer .copyright li:first-child {
-	margin-left: 0;
-}
 
 #footer {
 	/*       top - left - botton - right */
@@ -68,17 +58,22 @@
 	display: inline-block;
 	text-align: left;
 	padding-top: 1em;
+  color: initial;
 }
 #footer .copyright li.breve_lens span {
 	line-height: 0.3em;
 	margin-left: 0.3em;
+  color: initial;
 }
 
 #footer .copyright li {
 	display: inline-block;
 	font-size: 0.8em;
 	margin-right: 0.5em;
+  color: initial;
 }
 
-
+#viewer .slide .caption h2, p {
+	color: [(#CONFIG{html5uplens/valeur_texte_viewer_couleur})];
+}
 

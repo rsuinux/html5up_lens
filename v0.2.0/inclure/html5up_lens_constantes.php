@@ -11,6 +11,7 @@ if (!defined('_LENS_BREVE_PIED')) { // si la première n'est pas définie, alors
 	define('_LENS_BOUTON_COULEUR', '#E7746F' ) ;
 	define('_LENS_TEXTE_BOUTON_COULEUR', '#DDF224' ) ;
 	define('_LENS_TEXTE_VIEWER_COULEUR', '#DDF224' ) ;
+	define('_LENS_TEXTE_AUX_IMAGES', 'oui' ) ;
 }
 
 ?>

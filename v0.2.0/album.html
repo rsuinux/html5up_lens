@@ -41,7 +41,9 @@
 						<article>
 							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">[(#LOGO_DOCUMENT|image_recadre{160,100}|vider_attribut{class})] [<span>(#TITRE)</span>] </a>
 							<h2>#TITRE</h2>
-							<p>#DESCRIPTIF</p>
+							<p>
+                [(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)#DESCRIPTIF]
+              </p> 
 
 						</article>
 					</BOUCLE_DOCUMENTS>

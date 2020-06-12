@@ -820,6 +820,17 @@
 			font-weight: 700;
 		}
 
+/* Footer */
+
+		#footer .copyright {
+			list-style: none;
+			padding: 0;
+		}
+
+		#footer .copyright li:first-child {
+			margin-left: 0;
+		}
+
 /* Thumbnails */
 
         #thumbnails {

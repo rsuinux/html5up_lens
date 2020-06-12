@@ -9,7 +9,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B	
 	'bouton_couleur_label' => 'Bouton \'Album\'',
-	'bouton_couleur_explication' => 'Couleur de l\'intérieur du bouton \'Album\'',
+	'bouton_couleur_explication' => 'Couleur du bouton \'Album\'',
 	'breve_pied_explication' => 'Brève utilisé comme information sur le site',
 
 	// C
@@ -57,7 +57,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'texte_bouton_couleur_explication' => 'Couleur du texte dans le bouton \'Album\'',
 	'texte_viewer_couleur_explication' => 'Couleur du texte sur le visuel des images',
 	'theme_graphique_par_html5up' => 'Thème graphique par HTML5 UP',
-	'titre_page_configurer_html5up_lens' => 'Configurer le squelette HTML5up Lens',                                                      
+	'titre_page_configurer_html5up_lens' => 'Configurer le squelette HTML5up Lens',                          'texte_aux_images_oui' => 'Oui',
+  'texte_aux_images_non' => 'Non',
+  'texte_aux_images_explication' => 'Faut il placer le nom et le commentaire sur les images?',
+  'texte_aux_images_label' => 'Texte sur les images',
+
 
 	// V
 	'voir_album' => "Voir l'album"

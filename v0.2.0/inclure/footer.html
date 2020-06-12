@@ -1,13 +1,13 @@
 <footer id="footer">
     <ul class="copyright">
-	<li class="breve_lens"> <!-- on prend, si défini, une bréve (cf. les parametres, et on l'affiche comme faisant partie de l'ours du site -->
-		<BOUCLE_unique(BREVES){ id_breve IN #CONFIG{html5uplens/breve_pied} }>
+	<li class="breve_lens"> <!-- on prend, si défini, une breve (cf. les parametres, et on l'affiche comme faisant partie de l'ours du site -->
+		<BOUCLE_unique(BREVES){id_breve IN #CONFIG{html5uplens/breve_pied} }>
 			#TEXTE
 		</BOUCLE_unique>
 	</li><br/>
 	<li> <!-- un lien vers spip.net -->
 		<a href="https://www.spip.net/" title="<:site_realise_avec_spip:>"><:site_realise_avec_spip:></a>
-	</li></br/>
+	</li><br/>
 	<li> <!-- et un lien vers html5up.net -->
 		Design: <a href="http://html5up.net">HTML5 UP</a>
 	</li><br/> <!-- a présent, ajoutons de quoi se connecter, ça manquait un peu! -->

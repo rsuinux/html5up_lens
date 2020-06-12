@@ -21,14 +21,15 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_couleur', _LENS_BOUTON_CADRE_COULEUR ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_taille', _LENS_BOUTON_CADRE_TAILLE ),
 		array('ecrire_config', 'html5uplens/valeur_bouton_couleur', _LENS_BOUTON_COULEUR )
+		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
+		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR)
+		array('ecrire_config', 'html5uplens/valeur_texte_aux_images',_LENS_TEXTE_AUX_IMAGES)
         );
 
 
-	/* 0.2.1 = ajout de la couleur du texte dans le bouton Album */
-	$maj['0.2.1'] = array(
-		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
-		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR)
-	); 
+	/* 0.2.1 = mise à jour base de données si besoin
+	$maj['0.2.2'] = array(
+	); */ 
 
 	include_spip('base/upgrade');
 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
