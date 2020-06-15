@@ -39,10 +39,17 @@
 
 					<BOUCLE_DOCUMENTS(DOCUMENTS){id_album}>
 						<article>
-							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">[(#LOGO_DOCUMENT|image_recadre{160,100}|vider_attribut{class})] [<span>(#TITRE)</span>] </a>
-							<h2>#TITRE</h2>
+							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">
+                [(#LOGO_DOCUMENT|image_recadre{160,100}|vider_attribut{class})]
+                [(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)
+                  [<span>(#TITRE)</span>]
+                ]
+              </a>
+							  <h2>#TITRE</h2>
 							<p>
-                [(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)#DESCRIPTIF]
+                [(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)
+                  #DESCRIPTIF
+                ]
               </p> 
 
 						</article>

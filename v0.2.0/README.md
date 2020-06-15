@@ -80,3 +80,8 @@ Toute(s) aide(s) sera malgré tout la bienvenue.
  - Ça y est, j'ai trouvé comment mettre les couleurs sur la partie gauche
    (#viewer) sans que cela ne se répercute sur la partie droite (#footer)!
 
+ **14/06/2020**
+ - Amélioration de la visualisation des images sur la partie 'page principale'
+     => diminution du pied grisé afin de laisser plus de visualisation d'image 
+ - Correction des liens sociaux (n'apparaissaient pas tous)
+ - gestion des textes sur les images meilleur (condition en fonction des préférences utilisateurs)

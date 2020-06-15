@@ -20,9 +20,9 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton', _LENS_BOUTON_CADRE_O_N ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_couleur', _LENS_BOUTON_CADRE_COULEUR ),
 		array('ecrire_config', 'html5uplens/valeur_cadre_bouton_taille', _LENS_BOUTON_CADRE_TAILLE ),
-		array('ecrire_config', 'html5uplens/valeur_bouton_couleur', _LENS_BOUTON_COULEUR )
-		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR)
-		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR)
+		array('ecrire_config', 'html5uplens/valeur_bouton_couleur', _LENS_BOUTON_COULEUR ),
+		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR),
+		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR),
 		array('ecrire_config', 'html5uplens/valeur_texte_aux_images',_LENS_TEXTE_AUX_IMAGES)
         );
 

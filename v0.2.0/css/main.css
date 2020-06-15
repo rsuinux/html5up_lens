@@ -1046,11 +1046,12 @@
 			z-index: 1;
 		}
 
+      /* ici pour suprimer ou atténuer la barre grise en pied d'image */
 			#viewer .slide .caption {
-				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
 				padding: 2em 2em 0.75em 2em ;
 				position: absolute;
 				bottom: 0;
