@@ -24,7 +24,7 @@ function html5uplens_upgrade($nom_meta_base_version, $version_cible) {
 		array('ecrire_config', 'html5uplens/valeur_texte_bouton_couleur',_LENS_TEXTE_BOUTON_COULEUR),
 		array('ecrire_config', 'html5uplens/valeur_texte_viewer_couleur',_LENS_TEXTE_VIEWER_COULEUR),
 		array('ecrire_config', 'html5uplens/valeur_texte_aux_images',_LENS_TEXTE_AUX_IMAGES)
-        );
+	);
 
 
 	/* 0.2.1 = mise à jour base de données si besoin
@@ -47,7 +47,7 @@ function html5uplens_vider_tables($nom_meta_base_version) {
 	include_spip('inc/meta');
 	include_spip('inc/config');
 
-       // Supprimer les méta, ou oublie pas celle de la base.
+	// Supprimer les méta, ou oublie pas celle de la base.
 	effacer_meta('html5uplens');
 	effacer_meta($nom_meta_base_version);
 }

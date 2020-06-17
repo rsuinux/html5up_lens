@@ -10,7 +10,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
  *
 **/
 function formulaires_configurer_html5up_lens_saisies_dist(){
-  
+
 	include_spip('include/config');
 
 	$saisies = array(
@@ -31,7 +31,7 @@ function formulaires_configurer_html5up_lens_saisies_dist(){
 						'explication' => _T('html5up_lens:breve_pied_explication'), 
 						'defaut' => lire_config('html5uplens/breve_pied'),
 					),
-				    'verifier' => array(
+						'verifier' => array(
 						'type' => 'entier',
 						'options' => array(
 							'min' => 0,
@@ -176,19 +176,19 @@ function formulaires_configurer_html5up_lens_saisies_dist(){
 							'non' => _T('html5up_lens:texte_aux_images_non')
 						) 
 					),
-        ),
+				),
 				array(
 					'saisie' => 'couleur',
 					'options' => array(
-					  'afficher_si' => '@valeur_texte_aux_images@=="oui"',
+						'afficher_si' => '@valeur_texte_aux_images@=="oui"',
 						'nom' => 'valeur_texte_viewer_couleur',
 						'conteneur_class' => 'pleine_largeur',
 						'explication' => _T('html5up_lens:texte_viewer_couleur_explication'),
 						'defaut' => lire_config('html5uplens/valeur_texte_viewer_couleur')
 					) 
 				),
-      ),
-    ),
+			),
+		),
 	);
 
 	return $saisies;
@@ -232,7 +232,7 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 	if ( ! _request('breve_pied') ) {
 		ecrire_config( 'html5uplens/breve_pied', _LENS_BREVE_PIED ) ; 
 	} else {
-		ecrire_config( 'html5uplens/breve_pied',  _request('breve_pied') ) ;
+		ecrire_config( 'html5uplens/breve_pied', _request('breve_pied') ) ;
 	}
 
 	if ( _request('valeur_cadre_vignette') == "oui" ) {
@@ -240,9 +240,9 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 		ecrire_config( 'html5uplens/valeur_cadre_vignette', _request('valeur_cadre_vignette') ) ;
 		ecrire_config( 'html5uplens/valeur_cadre_taille', _request('valeur_cadre_taille') ) ;
 		ecrire_config( 'html5uplens/valeur_cadre_couleur', _request('valeur_cadre_couleur') ) ;
-    } else {
+	} else {
 		ecrire_config( 'html5uplens/valeur_cadre_vignette', 'non' ) ;
-		ecrire_config( 'html5uplens/valeur_cadre_taille', 0  ) ;
+		ecrire_config( 'html5uplens/valeur_cadre_taille', 0 ) ;
 	}
 
 	if ( _request('valeur_cadre_bouton') == "oui" ) {
@@ -260,10 +260,10 @@ function formulaires_configurer_html5up_lens_traiter_dist() {
 
 
 	if ( _request('valeur_texte_aux_images') == "oui" ) {
-	  ecrire_config( 'html5uplens/valeur_texte_viewer_couleur', _request('valeur_texte_viewer_couleur') ) ;
-	  ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
+		ecrire_config( 'html5uplens/valeur_texte_viewer_couleur', _request('valeur_texte_viewer_couleur') ) ;
+		ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
 	} else {
-	  ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
+		ecrire_config( 'html5uplens/valeur_texte_aux_images', _request('valeur_texte_aux_images') ) ;
 	}
 
 	$retour['message_ok'] = _T('html5up_lens:enregistrement_formulaire');

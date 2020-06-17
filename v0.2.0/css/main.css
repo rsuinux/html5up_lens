@@ -833,50 +833,50 @@
 
 /* Thumbnails */
 
-        #thumbnails {
-                display: -moz-flex;
-                display: -webkit-flex;
-                display: -ms-flex;
-                display: flex;
-                -moz-flex-wrap: wrap;
-                -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                padding: 0 0.75em;
-        }
-       #thumbnails article {
-                position: relative;
-                width: 50%;
-                background: #101010;
-                outline: 0;
-        }
+	#thumbnails {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 0 0.75em;
+	}
+		#thumbnails article {
+		position: relative;
+		width: 50%;
+		background: #101010;
+		outline: 0;
+	}
 
-        #thumbnails article .thumbnail {
-                -webkit-tap-highlight-color: transparent;
-                display: block;
-                position: relative;
-                border: 0;
-                outline: 0;
-        }
+	#thumbnails article .thumbnail {
+		-webkit-tap-highlight-color: transparent;
+		display: block;
+		position: relative;
+		border: 0;
+		outline: 0;
+	}
 
-        #thumbnails article .thumbnail img {
-                display: block;
-                width: 100%;
-        }
+	#thumbnails article .thumbnail img {
+		display: block;
+		width: 100%;
+	}
 
 	#thumbnails article .thumbnail:focus:before {
-                opacity: 0.5;
-        }
+		opacity: 0.5;
+	}
 
-        #thumbnails article h2, #thumbnails article p {
-                display: none;
-        }
+	#thumbnails article h2, #thumbnails article p {
+		display: none;
+	}
 
-        @media screen and (max-width: 480px) {
-                #thumbnails article .thumbnail:before {
-                        display: none;
-                }
-        }
+	@media screen and (max-width: 480px) {
+		#thumbnails article .thumbnail:before {
+			display: none;
+		}
+	}
 
 /* Viewer */
 
@@ -1046,7 +1046,7 @@
 			z-index: 1;
 		}
 
-      /* ici pour suprimer ou atténuer la barre grise en pied d'image */
+			/* ici pour suprimer ou atténuer la barre grise en pied d'image */
 			#viewer .slide .caption {
 				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
 				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
