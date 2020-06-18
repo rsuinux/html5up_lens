@@ -1,0 +1,84 @@
+/* Reprise des modifications originales pour html5up_lens:
+ * le fichier de base est css/perso.css
+ * ici ce trouve uniquement les parties récupérées de perso.css,
+ * qui sont nécessaire à l'adaptation actuelle.
+ *
+ * Auteur: R. Suinot <remi@suinot.org>
+*/
+/* Thumbnails */
+
+	#thumbnails article .thumbnail:before {
+		-moz-pointer-events: none;
+		-webkit-pointer-events: none;
+		-ms-pointer-events: none;
+		pointer-events: none;
+		-moz-transition: opacity 0.25s ease;
+		-webkit-transition: opacity 0.25s ease;
+		-ms-transition: opacity 0.25s ease;
+		transition: opacity 0.25s ease;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		box-shadow: inset 0 0 0 #CONFIG{html5uplens/valeur_cadre_taille}px #CONFIG{html5uplens/valeur_cadre_couleur},
+		inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
+		opacity: 0;
+		z-index: 1;
+	}
+
+	#thumbnails article.active .thumbnail:before {
+		/* opacity: 1; */
+		opacity:[(#CONFIG{html5uplens/valeur_cadre_vignette}|=={'oui'}|?{1,0})];
+	}
+
+#header p {
+	color: initial;
+}
+
+
+.button.alt, .button.alt:hover {
+	background: [(#CONFIG{html5uplens/valeur_bouton_couleur})];
+	border-color: [(#CONFIG{html5uplens/valeur_cadre_bouton_couleur})];
+	border-width: [(#CONFIG{html5uplens/valeur_cadre_bouton}|=={'oui'}|?{ #CONFIG{html5uplens/valeur_cadre_bouton_taille} ,0} )]px;
+/* color #fff pour la couleur du texte */
+	color: [(#CONFIG{html5uplens/valeur_texte_bouton_couleur})];
+}
+
+/* Footer */
+
+#footer {
+	/* top - left - botton - right */
+	padding: 0.2em 0.5em 0em 0.5em ;
+}
+
+#footer .copyright li.breve_lens {
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	padding-top: 1em;
+	color: initial;
+}
+#footer .copyright li.breve_lens span {
+	line-height: 0.3em;
+	margin-left: 0.3em;
+	color: initial;
+}
+
+#footer .copyright li {
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 0.5em;
+	color: initial;
+}
+
+#viewer .slide .caption h2, p {
+	color: [(#CONFIG{html5uplens/valeur_texte_viewer_couleur})];
+}
+
+.sociaux-list span {
+	font-size: 1em;
+	line-height: 0.5em;
+}
+

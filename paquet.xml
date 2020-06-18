@@ -1,21 +1,30 @@
 <paquet
-	prefix="Lens4spip"
+	prefix="html5uplens"
 	categorie="squelette"
-	version="0.1.0"
+	version="0.2.0"
 	etat="test"
-	compatibilite="[3.0.0;3.1.*]"
-	logo="prive/themes/spip/images/Lens4spip.png"
+	compatibilite="[3.2.0;3.3.*]"
+	logo="prive/themes/spip/images/Lens-64.png"
 	documentation=""
-	demonstration="http://html5up.net/lens"
+	demonstration="https://html5up.net/Lens"
+	schema="0.2.1" 
 >
 
 	<nom>Lens</nom>
 
 	<auteur>Got</auteur>
-	<auteur lien="http://html5up.net">html5up</auteur>
-	<licence lien="http://html5up.net/license">CC-By</licence>
+	<auteur mail="remi@suinot.org">Rémi Suinot</auteur>
+	<auteur lien="https://html5up.net">html5up</auteur>
+	<licence lien="https://html5up.net/license">CC-By</licence>
 
 	<necessite nom="albums" compatibilite="[3.3.18;[" />
-	<necessite nom="sociaux" compatibilite="[1.1.0;[" />
+	<necessite nom="adaptive_images" compatibilite="[1.18.0;]" />
+	<necessite nom="palette" compatibilite="[4.0.8;]" />
+	<necessite nom="saisies" compatibilite="[3.31.0;]" />
+	<utilise nom="compositions" compatibilite="[3.8.0;]" />
+	<utilise nom="sociaux" compatibilite="[2.1.0;]" />
+	<utilise nom="API de vérification" compatibilite="[1.9.7;]" />
+
+	<menu nom="configurer_html5up_lens" titre="html5up_lens:html5up_lens_titre" parent="menu_squelette" action="configurer_html5up_lens" icone="images/Lens-16.png" />
 
 </paquet>

@@ -17,8 +17,4 @@ h2.album_name {
 	text-align: center;
 }
 
-.button.alt, .button.alt:hover {
-	background: #e7746f;
-	border-color: #e7746f;
-	color:#fff;
-}
+

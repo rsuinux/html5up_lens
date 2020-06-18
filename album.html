@@ -27,12 +27,11 @@
 						<INCLURE{fond=inclure/sociaux}>
 
 					</header>
-					<BOUCLE_NB_DOCS(DOCUMENTS){id_album}>
-					[(#SET{nb_photo,[(#TOTAL_BOUCLE|singulier_ou_pluriel{lens:nombre_photo_un, lens:nombre_photo_plus})]})]
-					</BOUCLE_NB_DOCS>
+
+				<BOUCLE_NB_DOCS(DOCUMENTS){id_album}>
+					[(#SET{nb_photo,[(#TOTAL_BOUCLE|singulier_ou_pluriel{html5up_lens:nombre_photo_un, html5up_lens:nombre_photo_plus})]})]
+					</BOUCLE_NB_DOCS> 
 				<h2 class="album_name">
-
-
 					#TITRE [- (#GET{nb_photo})]
 				</h2>
 				<!-- Thumbnail -->
@@ -40,9 +39,12 @@
 
 					<BOUCLE_DOCUMENTS(DOCUMENTS){id_album}>
 						<article>
-							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">[(#LOGO_DOCUMENT|image_recadre{160,100}|vider_attribut{class})] [<span>(#TITRE)</span>] </a>
-							<h2>#TITRE</h2>
-							<p>#DESCRIPTIF</p>
+							<a class="thumbnail" href="[(#FICHIER|image_reduire{1200}|extraire_attribut{src})]">
+								[(#LOGO_DOCUMENT|image_recadre{160,100}|vider_attribut{class})]
+								[(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)[<span>(#TITRE)</span>]]
+							</a>
+								<h2>#TITRE</h2>
+							<p> [(#CONFIG{html5uplens/valeur_texte_aux_images}|=={oui}|oui)#DESCRIPTIF] </p> 
 
 						</article>
 					</BOUCLE_DOCUMENTS>

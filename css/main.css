@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
+/* @import url("http://fonts.googleapis.com/css?family=Roboto:400,700"); */
+@import url(roboto.css);
 
 /*
 	Lens by HTML5 UP
@@ -821,25 +822,14 @@
 
 /* Footer */
 
-	#footer {
-		padding: 2.25em 2.25em 1em 2.25em ;
-	}
-
 		#footer .copyright {
 			list-style: none;
 			padding: 0;
 		}
 
-			#footer .copyright li {
-				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 0.35em;
-				padding: 0;
-			}
-
-				#footer .copyright li:first-child {
-					margin-left: 0;
-				}
+		#footer .copyright li:first-child {
+			margin-left: 0;
+		}
 
 /* Thumbnails */
 
@@ -854,66 +844,39 @@
 		flex-wrap: wrap;
 		padding: 0 0.75em;
 	}
-
 		#thumbnails article {
-			position: relative;
-			width: 50%;
-			background: #101010;
-			outline: 0;
+		position: relative;
+		width: 50%;
+		background: #101010;
+		outline: 0;
+	}
+
+	#thumbnails article .thumbnail {
+		-webkit-tap-highlight-color: transparent;
+		display: block;
+		position: relative;
+		border: 0;
+		outline: 0;
+	}
+
+	#thumbnails article .thumbnail img {
+		display: block;
+		width: 100%;
+	}
+
+	#thumbnails article .thumbnail:focus:before {
+		opacity: 0.5;
+	}
+
+	#thumbnails article h2, #thumbnails article p {
+		display: none;
+	}
+
+	@media screen and (max-width: 480px) {
+		#thumbnails article .thumbnail:before {
+			display: none;
 		}
-
-			#thumbnails article .thumbnail {
-				-webkit-tap-highlight-color: transparent;
-				display: block;
-				position: relative;
-				border: 0;
-				outline: 0;
-			}
-
-				#thumbnails article .thumbnail img {
-					display: block;
-					width: 100%;
-				}
-
-				#thumbnails article .thumbnail:before {
-					-moz-pointer-events: none;
-					-webkit-pointer-events: none;
-					-ms-pointer-events: none;
-					pointer-events: none;
-					-moz-transition: opacity 0.25s ease;
-					-webkit-transition: opacity 0.25s ease;
-					-ms-transition: opacity 0.25s ease;
-					transition: opacity 0.25s ease;
-					content: '';
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					box-shadow: inset 0 0 0 2px #00D3B7, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
-					opacity: 0;
-					z-index: 1;
-				}
-
-				#thumbnails article .thumbnail:focus:before {
-					opacity: 0.5;
-				}
-
-			#thumbnails article h2, #thumbnails article p {
-				display: none;
-			}
-
-			#thumbnails article.active .thumbnail:before {
-				opacity: 1;
-			}
-
-		@media screen and (max-width: 480px) {
-
-			#thumbnails article .thumbnail:before {
-				display: none;
-			}
-
-		}
+	}
 
 /* Viewer */
 
@@ -1083,11 +1046,12 @@
 			z-index: 1;
 		}
 
+			/* ici pour suprimer ou atténuer la barre grise en pied d'image */
 			#viewer .slide .caption {
-				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
+				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 20%, rgba(16,16,16,0));
 				padding: 2em 2em 0.75em 2em ;
 				position: absolute;
 				bottom: 0;
@@ -1097,7 +1061,7 @@
 				z-index: 1;
 			}
 
-				#viewer .slide .caption h2, #viewer .slide .caption h3, #viewer .slide .caption h4, #viewer .slide .caption h5, #viewer .slide .caption h6 {
+				#viewer .slide .caption h3, #viewer .slide .caption h4, #viewer .slide .caption h5, #viewer .slide .caption h6 {
 					color: #fff;
 				}
 

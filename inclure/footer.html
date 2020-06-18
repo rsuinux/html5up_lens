@@ -1,0 +1,39 @@
+<footer id="footer">
+    <ul class="copyright">
+	<li class="breve_lens"> <!-- on prend, si défini, une breve (cf. les parametres, et on l'affiche comme faisant partie de l'ours du site -->
+		<BOUCLE_unique(BREVES){id_breve IN #CONFIG{html5uplens/breve_pied} }>
+			#TEXTE
+		</BOUCLE_unique>
+	</li><br/>
+	<li> <!-- un lien vers spip.net -->
+		<a href="https://www.spip.net/" title="<:site_realise_avec_spip:>"><:site_realise_avec_spip:></a>
+	</li><br/>
+	<li> <!-- et un lien vers html5up.net -->
+		Design: <a href="http://html5up.net">HTML5 UP</a>
+	</li><br/> <!-- a présent, ajoutons de quoi se connecter, ça manquait un peu! -->
+	<?php
+		if (isset($GLOBALS['visiteur_session']['id_auteur']) AND $GLOBALS['visiteur_session']['id_auteur']) {
+	?>
+	<li>
+		<a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a>
+	</li>
+	<?php
+		if (include_spip('inc/autoriser') AND autoriser('ecrire')){
+	?>
+		<li>
+			<a href="#EVAL{_DIR_RESTREINT_ABS}"><:espace_prive:></a>
+		</li>
+	<?php
+		}
+	} else {
+	?>
+		<li>
+			<a href="[(#URL_PAGE{login}|parametre_url{url,#SELF|parametre_url{url,''}})]" rel="nofollow" class='login_modal'>
+				<:lien_connecter:>
+			</a>
+		</li>
+	<?php
+		}
+	?>
+    <ul class="copyright">
+</footer>
